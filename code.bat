@@ -1,5 +1,5 @@
 @echo off
-title Code with SigmaO
+title Code with Bilal
 chcp 65001 >nul
 color 5
 :start
@@ -16,7 +16,7 @@ echo.
 set /p input=Type the number to open the corresponding application: 
 
 if "%input%"=="1" (
-    start "" "C:\Users\sigmao\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+    start "" "C:\Path\To\VSCODE\xampp-control.exe\Code.exe"
     goto start
 )
 if "%input%"=="2" (
