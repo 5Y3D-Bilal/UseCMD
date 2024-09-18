@@ -9,9 +9,8 @@ call :banner
 echo.
 echo.
 echo [38;2;255;255;0m        ╔═(1) VS Code[0m  
-echo [38;2;255;255;0m        ╠═(2) XAMPP[0m  
-echo [38;2;255;255;0m        ╠═(3) Projects Folder[0m  
-echo [38;2;255;255;0m        ╚═(4) Google Chrome[0m  
+echo [38;2;255;255;0m        ╠═(2) Folder[0m  
+echo [38;2;255;255;0m        ╚═(3) Google Chrome[0m  
 echo.
 set /p input=Type the number to open the corresponding application: 
 
@@ -20,14 +19,10 @@ if "%input%"=="1" (
     goto start
 )
 if "%input%"=="2" (
-    start "" "C:\Path\To\XAMPP\xampp-control.exe"
-    goto start
-)
-if "%input%"=="3" (
     start "" "explorer.exe C:\Path\To\Projects\Folder"
     goto start
 )
-if "%input%"=="4" (
+if "%input%"=="3" (
     start "" "C:\Path\To\Google\Chrome\Application\chrome.exe"
     goto start
 )
